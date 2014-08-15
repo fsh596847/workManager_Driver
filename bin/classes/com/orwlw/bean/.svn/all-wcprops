@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/android_app/!svn/ver/1314/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/src/com/orwlw/bean
+END
+PersonInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/android_app/!svn/ver/1310/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/src/com/orwlw/bean/PersonInfo.java
+END
+Localdata.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/android_app/!svn/ver/1314/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/src/com/orwlw/bean/Localdata.java
+END
+OrderGoods.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/android_app/!svn/ver/1305/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/src/com/orwlw/bean/OrderGoods.java
+END
+Custom.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/android_app/!svn/ver/1314/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/src/com/orwlw/bean/Custom.java
+END
+Comm.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/android_app/!svn/ver/1306/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/src/com/orwlw/bean/Comm.java
+END
+Order.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/android_app/!svn/ver/530/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/src/com/orwlw/bean/Order.java
+END
+OrderDetail.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/android_app/!svn/ver/1305/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/src/com/orwlw/bean/OrderDetail.java
+END

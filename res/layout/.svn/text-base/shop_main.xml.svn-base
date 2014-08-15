@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+     >
+    <com.orwlw.activity.MyListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/slategrey"
+        android:dividerHeight="1dp"
+        android:fadeScrollbars="true"
+        android:listSelector="@drawable/list_selector" >
+    </com.orwlw.activity.MyListView>
+</RelativeLayout>

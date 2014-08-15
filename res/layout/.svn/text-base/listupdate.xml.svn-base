@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <cn.com.activity.MyListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#4d4d4d"
+        android:dividerHeight="1dp"
+        android:fadeScrollbars="true"
+        android:listSelector="@drawable/list_selector"
+         />
+
+</LinearLayout>

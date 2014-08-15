@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/android_app/!svn/ver/1316/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/res/layout
+END
+scan_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/android_app/!svn/ver/1316/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/res/layout/scan_layout.xml
+END
+dialog_detail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/android_app/!svn/ver/773/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/res/layout/dialog_detail.xml
+END
+map_main.xml
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/android_app/!svn/ver/683/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/res/layout/map_main.xml
+END
+order_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/android_app/!svn/ver/1311/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/res/layout/order_list_item.xml
+END
+main.xml
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/android_app/!svn/ver/507/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/res/layout/main.xml
+END
+upgrade.xml
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/android_app/!svn/ver/1302/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/res/layout/upgrade.xml
+END
+loading_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/android_app/!svn/ver/1292/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/res/layout/loading_activity.xml
+END
+device_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/android_app/!svn/ver/1298/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/res/layout/device_list.xml
+END
+order_head.xml
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/android_app/!svn/ver/709/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/res/layout/order_head.xml
+END
+order_detail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/android_app/!svn/ver/1304/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/res/layout/order_detail.xml
+END
+orderdetial.xml
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/android_app/!svn/ver/540/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/res/layout/orderdetial.xml
+END
+order_bottom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/android_app/!svn/ver/507/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/res/layout/order_bottom.xml
+END
+device_name.xml
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/android_app/!svn/ver/1298/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/res/layout/device_name.xml
+END
+activity_main.xml
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/android_app/!svn/ver/1296/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/res/layout/activity_main.xml
+END
+head.xml
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/android_app/!svn/ver/653/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/res/layout/head.xml
+END
+detaile_order.xml
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/android_app/!svn/ver/797/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/res/layout/detaile_order.xml
+END
+pull_to_refresh_header.xml
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/android_app/!svn/ver/758/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/res/layout/pull_to_refresh_header.xml
+END
+order_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/android_app/!svn/ver/776/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/res/layout/order_list.xml
+END
+main_bottom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/android_app/!svn/ver/753/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/res/layout/main_bottom.xml
+END
+custom_text_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/android_app/!svn/ver/797/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/res/layout/custom_text_view.xml
+END
+order.xml
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/android_app/!svn/ver/1296/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/res/layout/order.xml
+END
+dialog_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/android_app/!svn/ver/594/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/res/layout/dialog_item.xml
+END
+shop_main.xml
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/android_app/!svn/ver/653/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/res/layout/shop_main.xml
+END
+listupdate.xml
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/android_app/!svn/ver/506/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/res/layout/listupdate.xml
+END
+test.xml
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/android_app/!svn/ver/597/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/res/layout/test.xml
+END
+edit_number_price.xml
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/android_app/!svn/ver/1316/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/res/layout/edit_number_price.xml
+END

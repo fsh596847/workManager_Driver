@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:id="@+id/upgradelayout" android:layout_height="fill_parent">
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="260dip" android:layout_height="300dip">
+		<TextView android:layout_width="wrap_content"
+			android:layout_gravity="center" android:layout_marginLeft="10dip"
+			android:layout_height="wrap_content" android:layout_marginTop="10dip"
+			android:gravity="center_horizontal" android:textStyle="bold"
+			android:textColor="#fff" android:textSize="18sp" android:text="升级提示" />
+		<TextView android:layout_width="wrap_content" android:id="@+id/versonname"
+			android:singleLine="true" android:autoLink="all"
+			android:layout_marginLeft="5dp" android:layout_height="wrap_content"
+			android:gravity="center_horizontal" android:textStyle="bold"
+			android:textColor="#fff" android:textSize="13sp" android:text="版本：" />
+		<TextView android:layout_width="wrap_content"
+			android:layout_marginLeft="5dp" android:layout_height="wrap_content"
+			android:textColor="#fff" android:textSize="13sp" android:text="更新内容" />
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_weight="1" android:layout_width="fill_parent"
+			android:orientation="vertical">
+			<ScrollView android:layout_height="fill_parent"
+				android:layout_marginLeft="5dp" android:layout_width="match_parent">
+				<TextView android:id="@+id/soft_upgradecontent"
+					android:layout_width="fill_parent" android:layout_height="fill_parent"
+					android:scrollbars="none" android:textColor="#fff"
+					android:textSize="13sp" android:text="" />
+			</ScrollView>
+
+		</LinearLayout>
+		<TextView android:layout_width="wrap_content" android:id="@+id/soft_upgradedate"
+			android:layout_height="wrap_content" android:gravity="center_horizontal"
+			android:layout_marginTop="5dip" android:textColor="#ff0000"
+			android:textSize="14sp" android:text="版本发布日期" />
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:id="@+id/linearLayout1">
+			<Button android:text="现在升级" android:id="@+id/button1"
+				android:background="@drawable/btn_style_green"
+				android:layout_weight="1" android:layout_margin="2dip"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"></Button>
+			<Button android:text="稍后升级" android:id="@+id/button2"
+				android:background="@drawable/btn_style_green"
+				android:layout_weight="1" android:layout_margin="2dip"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"></Button>
+		</LinearLayout>
+
+
+	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/android_app/!svn/ver/1315/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/src/com/orwlw/activity
+END
+MainActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/android_app/!svn/ver/1300/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/src/com/orwlw/activity/MainActivity.java
+END
+UpgradeActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/android_app/!svn/ver/1300/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/src/com/orwlw/activity/UpgradeActivity.java
+END
+Checkserver.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/android_app/!svn/ver/1300/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/src/com/orwlw/activity/Checkserver.java
+END
+Order_item_Activity.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/android_app/!svn/ver/1314/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/src/com/orwlw/activity/Order_item_Activity.java
+END
+AllOfOrder_Activity.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/android_app/!svn/ver/1315/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/src/com/orwlw/activity/AllOfOrder_Activity.java
+END
+ScanRfidActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/android_app/!svn/ver/1314/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/src/com/orwlw/activity/ScanRfidActivity.java
+END
+EditNum_PriceDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/android_app/!svn/ver/1314/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/src/com/orwlw/activity/EditNum_PriceDialog.java
+END
+DeviceListActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/android_app/!svn/ver/1297/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/src/com/orwlw/activity/DeviceListActivity.java
+END
+MyApplication.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/android_app/!svn/ver/1314/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/src/com/orwlw/activity/MyApplication.java
+END
+CommDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/android_app/!svn/ver/1294/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/src/com/orwlw/activity/CommDialog.java
+END
+MyListView.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/android_app/!svn/ver/521/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/src/com/orwlw/activity/MyListView.java
+END
+ShopListActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/android_app/!svn/ver/1314/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/src/com/orwlw/activity/ShopListActivity.java
+END
+AddCommDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/android_app/!svn/ver/1314/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/src/com/orwlw/activity/AddCommDialog.java
+END
+Order_Activity.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/android_app/!svn/ver/1315/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/src/com/orwlw/activity/Order_Activity.java
+END
+MapActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/android_app/!svn/ver/797/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/src/com/orwlw/activity/MapActivity.java
+END
+LoadingActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/android_app/!svn/ver/1314/%E6%86%A8%E7%AE%A1%E4%BD%B3%E5%8F%B8%E6%9C%BA%E7%89%88APP%E9%A1%B9%E7%9B%AE/WorkManager_Driver/src/com/orwlw/activity/LoadingActivity.java
+END

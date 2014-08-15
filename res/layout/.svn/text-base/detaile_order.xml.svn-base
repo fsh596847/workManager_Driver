@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_myexam_item"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/bg_bottom"
+    android:orientation="vertical" >
+    <ImageView
+        android:id="@+id/image_myExam_infoIcon"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:layout_margin="15dp"
+        android:src="@drawable/mini_avatar_shadow" />
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/image_myExam_infoIcon"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_code"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="000001"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="偶然物联网科技有限公司"
+               android:textColor="@color/white"
+               android:textSize="20sp"
+               android:textStyle="bold"
+               />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="地址："
+                   
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/text_myExam_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="南中环街200号"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image_isvisited"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_myExam_tringle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/arrow1" />
+
+</RelativeLayout>

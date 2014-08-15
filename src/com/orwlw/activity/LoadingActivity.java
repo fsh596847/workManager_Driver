@@ -1,0 +1,240 @@
+package com.orwlw.activity;
+
+import java.io.File;
+import java.util.HashMap;
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.AlertDialog.Builder;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.telephony.TelephonyManager;
+import android.view.KeyEvent;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.TextView;
+import cn.com.utils.BitmapUtil;
+import cn.com.utils.ExitApplication;
+import cn.com.utils.Utils;
+import com.orwlw.WorkManager_Driver.R;
+import com.orwlw.net.ConvertToBean;
+
+/**
+ * 启动加载数据界面
+ * 
+ * @author Administrator
+ * 
+ */
+public class LoadingActivity extends Activity {
+
+	private TextView tv;
+	private TextView tv_logs;
+	private String logsstr = "";
+	private int logNum = 0;
+	private boolean loading;
+
+	private ConvertToBean toBean;
+	private ExitApplication instance;
+
+	private Context context;
+	private String telId;
+
+	public static final int FLAG_HOMEKEY_DISPATCHED = 0x80000000; // 需要自己定义标志
+
+	// 实现动态加载的文字过程
+	private Handler handler = new Handler() {
+		@Override
+		public void handleMessage(Message msg) {
+
+			switch (logNum % 3) {
+			case 0:
+				tv.setText("获取数据中 .");
+				break;
+			case 1:
+				tv.setText("获取数据中 ..");
+				break;
+			case 2:
+				tv.setText("获取数据中 ...");
+				break;
+			}
+			super.handleMessage(msg);
+		}
+	};
+
+	// 加载过程中实时显示更新日志
+	private Handler handler_logs = new Handler() {
+		@Override
+		public void handleMessage(Message msg) {
+			tv_logs.setText(logsstr);
+			super.handleMessage(msg);
+		}
+	};
+
+	// 加载成功后进入Main界面
+	private Handler intentHandler = new Handler() {
+
+		@Override
+		public void handleMessage(Message msg) {
+
+			loading = false;
+			logNum = 0;
+
+			// File file = new File("/sdcard/img");
+			// if (file.exists())
+			// BitmapUtil.deleteFile(file);
+
+			Intent intent = new Intent(LoadingActivity.this,
+					ScanRfidActivity.class);
+			finish();
+			startActivity(intent);
+
+			super.handleMessage(msg);
+		}
+
+	};
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		this.getWindow().setFlags(FLAG_HOMEKEY_DISPATCHED,
+				FLAG_HOMEKEY_DISPATCHED);// 关键代码
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		setContentView(R.layout.loading_activity);
+		TelephonyManager tm = (TelephonyManager) this
+				.getSystemService(Context.TELEPHONY_SERVICE);
+
+		telId = tm.getDeviceId();
+		tv = (TextView) findViewById(R.id.loading_text);
+		tv_logs = (TextView) findViewById(R.id.tv_status_logs);
+		context = this;
+		instance = ExitApplication.getInstance();
+		instance.addActivity(this);
+
+		if (Utils.checkNet(this)) {
+			loading = true;
+			new Thread() {
+				@Override
+				public void run() {
+					while (loading) {
+						logNum++;
+						handler.sendEmptyMessage(0);
+						try {
+							Thread.sleep(500);
+						} catch (InterruptedException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+
+					super.run();
+				}
+
+			}.start();
+
+			// 把获取的设备号加入全局
+			instance.setpersoncode(telId);
+
+			// 工作线程更新同步数据
+			new Thread() {
+				@Override
+				public void run() {
+					HashMap<String, String> propertys = new HashMap<String, String>();
+					propertys.put("personno", telId);
+
+					// 初始化在这里自动拉取服务器数据,存储到本地数据库
+					toBean = new ConvertToBean(LoadingActivity.this);
+					// 同步订单
+					toBean.getAllOrder("Driver_GetCustomOrder", propertys);
+					// 同步订单明细
+					toBean.getAllOrderDetail("Driver_GetCustomOrderDetial",
+							propertys);
+					logsstr += "订单数据获取成功！";
+					handler_logs.sendEmptyMessage(0);
+
+					String synstime = ((MyApplication) getApplication())
+							.Getlocaldata().LAST_SYSNC_DATE;
+
+					propertys.put("LastTime", synstime);
+					// 同步客户
+					toBean.getAllCustom("Driver_GetCustoms_ByLastdate_Driver",
+							propertys);
+					logsstr += "\n门店数据获取成功！";
+					// 同步商品
+					toBean.getAllComm("GetCommList_by_lastdate_driver",
+							propertys);
+					logsstr += "\n商品数据获取成功！";
+					handler_logs.sendEmptyMessage(0);
+
+					String personname = toBean.getPersonInfo("GetPersonInfo",
+							propertys);
+
+					((MyApplication) getApplication()).Savelocaldata(
+							"personname", personname);
+
+					// 本地记录同步时间
+					((MyApplication) getApplication()).Savelocaldata(
+							"LAST_SYSNC_DATE", Utils.GetTime());
+
+					intentHandler.sendEmptyMessage(0);
+					super.run();
+				}
+
+			}.start();
+		} else {
+			checkNet();
+
+		}
+
+	}
+
+	private void checkNet() {
+		if (!Utils.checkNet(this)) {
+			AlertDialog.Builder builder = new Builder(context);
+			builder.setMessage("对不起，当前网络不可用?");
+			builder.setTitle("提示");
+			builder.setPositiveButton("确认",
+					new android.content.DialogInterface.OnClickListener() {
+						@Override
+						public void onClick(DialogInterface dialog, int which) {
+							dialog.dismiss();
+							Intent intent;
+							if (android.os.Build.VERSION.SDK_INT > 10) {
+								intent = new Intent(
+										android.provider.Settings.ACTION_WIRELESS_SETTINGS);
+							} else {
+								intent = new Intent();
+								ComponentName component = new ComponentName(
+										"com.android.settings",
+										"com.android.settings.WirelessSettings");
+								intent.setComponent(component);
+								intent.setAction("android.intent.action.VIEW");
+							}
+							startActivity(intent);
+							finish();
+						}
+
+					});
+			builder.create().show();
+		}
+
+	}
+
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		if (keyCode == KeyEvent.KEYCODE_HOME) {
+			return true;
+		}
+		return true;
+	}
+
+	@Override
+	public void onAttachedToWindow() {
+		this.getWindow().setType(WindowManager.LayoutParams.TYPE_KEYGUARD);
+		super.onAttachedToWindow();
+	}
+
+}

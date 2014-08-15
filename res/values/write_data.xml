@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- RFID new request -->
+<resources>
+    <string name="cmd_for_read_ic" translatable="false">AA01000055</string>
+    <string name="cmd_for_reset_ic" translatable="false">AA01010055</string>
+    <string name="cmd_for_scan_data" translatable="false">AA0206000055</string>
+</resources>    

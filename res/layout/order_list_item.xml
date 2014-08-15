@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black" >
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/dingdanxiao"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/Commodity_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="伊利纯牛奶 乐里镇  240ml*12包/提"
+            android:textColor="@color/limegreen"
+            android:textSize="16sp" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/Commodity_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dip"
+            android:layout_toRightOf="@id/Commodity_name"
+            android:src="@drawable/ic_right_normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout4"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/layout2"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dingdanda"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/Quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:text="数量"
+            android:textColor="@color/limegreen"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/et_Quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Quantity"
+            android:layout_below="@+id/Quantity"
+            android:background="@null"
+            android:editable="true"
+            android:ems="5"
+            android:focusable="true"
+            android:gravity="left"
+            android:text=""
+            android:textColor="@color/limegreen"
+            android:textSize="20sp" >
+
+            <requestFocus />
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/Quantity"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/Quantity"
+            android:gravity="right"
+            android:text="单位价格"
+            android:textColor="@color/limegreen"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/et_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/tv_price"
+            android:layout_below="@+id/tv_price"
+            android:layout_toRightOf="@+id/et_Quantity"
+            android:background="@null"
+            android:editable="true"
+            android:ems="5"
+            android:focusable="true"
+            android:gravity="right"
+            android:numeric="decimal"
+            android:text=""
+            android:textColor="@color/limegreen"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/tijiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/chenggongpeisong"
+            android:gravity="center"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/layout2"
+        android:layout_centerInParent="true"
+        android:gravity="center" >
+    </RelativeLayout>
+
+</RelativeLayout>
